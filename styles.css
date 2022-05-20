@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+}
+
+#icon{
+    width: 60px;
+    height: auto;
+    user-select: none;
+
+    box-shadow: 5px 5px 10px #a0a0a0;
+    margin: 10px;
+}
+
+#abutton{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    
+    user-select: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    color: #161616;
+    font-size: 90%;
+}
+
+#changingName{
+    position: absolute;
+    margin-top: 30px;
+
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+#insideChangingName{
+    position: absolute;
+    margin-top: 55px;
+
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+
+    color: rgb(220, 80, 80);
+    transition: ease-in-out 100ms;
+}
+
+#sidebar{
+    position: sticky;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    width: 100px;
+    margin-left: 10px;
+}
+#sidebar > div{
+    background-color: #161616;
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 5px 10px #a0a0a0;
+    margin-bottom: 10px;
+    border-radius: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 150ms ease-out;
+}
+#sidebar > div:hover{
+    width: 70px;
+    height: 70px;
+}
+#sidebar > div > img{
+    opacity: 1;
+    position: absolute;
+
+    transition: 150ms ease-out;
+}
+#sidebar > div:hover > img{
+    opacity: 0;
+}
+#sidebar > div:hover #abutton{
+    color: aliceblue;
+    z-index: 1;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
